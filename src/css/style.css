@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 35px;
+}
+.container{
+    display: grid;
+    grid-template-areas: "campo-principal campo-lateral";
+    grid-template-columns: 543px 275px;
+    grid-gap: 17px;
+}
+.campo-principal{
+    grid-area: campo-principal;
+    display: grid;
+    grid: "video" 217px
+    "titulo-principal" 17px
+    "vizualizacoes-principal" 15px
+    "texto-principal" 30px;
+    row-gap: 20px;
+}
+.video{
+    grid-area: video;
+    background-color: var(--cor-padrao);
+    width: 543px;
+    height: 217px;
+}
+.titulo-principal{
+    grid-area: titulo-principal;
+}
+.vizualizacoes-principal{
+    grid-area: vizualizacoes-principal;
+}
+.texto-principal{
+    grid-area:texto-principal;
+}
+.campo-lateral{
+    grid-template-rows: 56px repeat(6, 15px 40px);
+    grid-area: campo-lateral;
+    display: grid;
+    grid-template-areas: "propaganda propaganda" 
+    "video-sugerido-1 titulo-video-sugerido-1"
+    "video-sugerido-1 infos-video-1"
+    "video-sugerido-2 titulo-video-sugerido-2"
+    "video-sugerido-2 infos-video-2"
+    "video-sugerido-3 titulo-video-sugerido-3"
+    "video-sugerido-3 infos-video-3";
+    grid-gap: 15px 2px;
+}
+.propaganda{
+    grid-area: propaganda;
+    width: 270px;
+    height: 56px;
+    background-color: var(--cor-padrao);
+}
+.video-sugerido-1{
+    grid-area: video-sugerido-1;
+}
+.titulo-video-sugerido-1{
+    grid-area: titulo-video-sugerido-1;
+}
+.infos-video-1{
+    grid-area: infos-video-1;    
+}
+.video-sugerido-2{
+    grid-area: video-sugerido-2;
+}
+.titulo-video-sugerido-2{
+    grid-area: titulo-video-sugerido-2;
+}
+.infos-video-2{
+    grid-area: infos-video-2;
+}
+.video-sugerido-3{
+    grid-area: video-sugerido-3;
+}
+.titulo-video-sugerido-3{
+    grid-area: titulo-video-sugerido-3;
+}
+.infos-video-3{
+    grid-area: infos-video-3;
+}
+.titulo-video-sugerido-1 , .titulo-video-sugerido-2 , .titulo-video-sugerido-3{
+    font-size: 14px;
+}
+.infos-video-1 , .infos-video-2 , .infos-video-3{
+    font-size: 11px;
+    line-height: 14px;
+}
+.campo-lateral , .campo-principal{
+    margin-top: 35px;
+}
+.video-sugerido-1 , .video-sugerido-2 , .video-sugerido-3{
+width: 101px;
+height: 71px;
+background-color: var(--cor-padrao);
+}
